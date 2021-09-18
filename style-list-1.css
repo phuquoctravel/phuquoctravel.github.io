@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+*{
+  font-family: 'Tinos', serif;
+  padding: 0; 
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav {
+
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+nav img {
+ 
+  height: 18vh ;
+  position: absolute;
+  top: 16px;
+  left: 5%;
+}
+nav ul {
+  float: right;
+  margin-right: 25px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 15px;
+}
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 20px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #FFF;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+  color: #000;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+
+.home .banner{
+  background-image: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; 
+
+}
+.home .banner img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home .content{
+  text-align: center;
+}
+
+.home .content h3{
+  position: absolute;
+  top: 50%;
+  left:17%;
+  font-size: 530%;
+  color:#fff;
+  text-transform: uppercase;
+  text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+}
+
+.home .content p{
+  position: absolute;
+  top: 66%;
+  LEFT: 10%;
+  font-size: 240%;
+  color:#fff;
+  padding:.5rem 0;
+}
+
+.home .content a{
+  position: absolute;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  top: 73%;
+  LEFT: 28%;
+}
+.btn{
+  font-size: 1.3rem;
+  margin-top: 1.7rem;
+  height:4rem;
+  width:10rem;
+  border-radius: .5rem;
+  border:.5rem solid #FFF;
+  box-shadow: 0 .3rem .5rem #FFF;
+  outline: none;
+  border:none;
+  background: #0098a1;
+  color:#fff;
+  cursor: pointer;
+  transition: .2s linear;
+}
+.home .content .btn:hover{
+  background: none;
+  border:.2rem solid #FFF;
+  color:#FFFF;
+}
+
+
+
+@media (max-width: 1366px) {
+  nav img {
+    left: 8%;
+  }
+  .home .content h3{
+   
+    top: 51%;
+    left:15%;
+    font-size: 470%;
+  }
+  .home .content p{
+  top: 62%;
+  LEFT: 8%;
+  font-size: 220%;
+  }
+
+.home .content a{
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  top: 67%;
+  LEFT: 28%;
+}
+}
+
+@media (max-width: 992px) {
+  nav img {
+    left: 6%;
+    top: 10px;
+    width: 130px;
+  }
+
+nav ul li a {
+  font-size: 17px;
+}
+.home .content h3{
+  top: 45%;
+  left:10%;
+  font-size: 400%;
+ }
+
+.home .content p{
+  top: 54%;
+  LEFT: 4%;
+  font-size: 1.8rem;
+}
+
+.home .content a{
+  padding-top: 1.1rem;
+  top: 62%;
+  left: 35%;
+}  
+}
+
+@media (max-width: 768px) {
+
+
+  label #btn {
+    display: block;
+    color:#FFF;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0098a1;
+    opacity: 0.8;
+    
+    right: -100%;
+
+    text-align: center;
+    transition: all 0.5s;
+    margin-right: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 7rem 0;
+    line-height: .3rem;
+
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: #FFF;
+    
+  }
+  #check:checked ~ ul {
+    right: 0;
+  }
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+    position: fixed;
+    z-index: 4;
+    right: 0;
+    color: #fff;
+  }
+  
+}
+  @media (max-width: 414px){
+    .home .content h3{
+      top: 45%;
+      left: 13%;
+      font-size: 2.5rem;
+     }
+    
+    .home .content p{
+      top: 54%;
+      LEFT: 2%;
+      font-size: 1.2rem;
+    }
+    
+    .home .content a{
+      font-size: 1.1rem;
+      padding-top: .6rem;
+      top: 62%;
+      LEFT: 37%;
+    }  
+    .btn{
+      font-size: 1.7rem;
+      margin-top: 1.7rem;
+      height:3rem;
+      width:7rem;
+      border-radius: .1rem;
+      border:.2rem solid #FFF;
+      box-shadow: 0 .1rem .3rem #FFF;
+     
+    }
+  }
+
