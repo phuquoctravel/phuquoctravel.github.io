@@ -1,1 +1,0 @@
-Thần Troll src
