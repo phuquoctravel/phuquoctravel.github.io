@@ -156,7 +156,7 @@ label #cancel {
   }
   .home .content h3{
    
-    top: 51%;
+    top: 45%;
     left:15%;
     font-size: 470%;
   }
@@ -169,7 +169,7 @@ label #cancel {
 .home .content a{
   font-size: 1.8rem;
   padding-top: 1rem;
-  top: 67%;
+  top: 70%;
   LEFT: 28%;
 }
 }
