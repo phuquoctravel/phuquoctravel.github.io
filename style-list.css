@@ -91,7 +91,7 @@ label #cancel{
   font-family: 'Pacifico', cursive;
   font-size: 1.8rem;
   padding: 1rem;
-  padding-top: 3rem;
+  padding-top: .5rem;
   text-align: center;
   letter-spacing: .2rem;
   text-decoration: overline;
@@ -491,6 +491,9 @@ label #cancel{
     background:#0098a1;
   }
   
+  .clear{
+    clear: right;
+  }
 @media (max-width:1365px){
     nav img{
         left: 8%;
@@ -580,10 +583,6 @@ nav ul li a{
     }
 }
 @media (max-width:414px){
-  .heading2{
-  font-size: 1rem;
-   padding-top: .5rem;  
-  }
   .book .row form .inputBox input{
     font-size: 1rem;
     
