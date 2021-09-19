@@ -580,6 +580,10 @@ nav ul li a{
     }
 }
 @media (max-width:414px){
+  .heading2{
+  font-size: 1rem;
+   padding-top: .5rem;  
+  }
   .book .row form .inputBox input{
     font-size: 1rem;
     
