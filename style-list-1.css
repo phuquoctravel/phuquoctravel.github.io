@@ -211,7 +211,7 @@ nav ul li a {
 }  
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 850px){
 
 
   label #btn {
@@ -276,7 +276,7 @@ nav ul li a {
     color: #fff;
   }
 }
-  @media (max-width: 444px) and (orientation: landscape){
+  @media (max-width: 444px){
     .home .content h3{
       top: 45%;
       left: 13%;
