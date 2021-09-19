@@ -156,9 +156,9 @@ label #cancel {
   }
   .home .content h3{
    
-    top: 45%;
+    top: 52%;
     left:15%;
-    font-size: 470%;
+    font-size: 500%;
   }
   .home .content p{
   top: 62%;
@@ -169,8 +169,8 @@ label #cancel {
 .home .content a{
   font-size: 1.8rem;
   padding-top: 1rem;
-  top: 70%;
-  LEFT: 28%;
+  top: 67%;
+  LEFT: 23%;
 }
 }
 
@@ -210,6 +210,24 @@ nav ul li a {
     display: block;
     color:#FFF;
   }
+  .home .content h3{
+    top: 45%;
+    left: 27%;
+    font-size: 350%;
+   }
+  
+  .home .content p{
+    top: 54%;
+    LEFT: 10%;
+    font-size: 170%;
+  }
+  
+  .home .content a{
+    padding-top: 1.1rem;
+    top: 62%;
+    left: 37%;
+  }  
+
 
   nav ul {
     position: fixed;
@@ -249,9 +267,8 @@ nav ul li a {
     right: 0;
     color: #fff;
   }
-  
 }
-  @media (max-width: 414px){
+  @media (max-width: 444px){
     .home .content h3{
       top: 45%;
       left: 13%;
@@ -280,5 +297,15 @@ nav ul li a {
       box-shadow: 0 .1rem .3rem #FFF;
      
     }
-  }
+   }
+   @media (max-width: 374px){
+    .home .content h3{
+      
+      font-size: 2rem;
+     }
+    .home .content a{
+    
+      LEFT: 33%;
+    }  
+   }
 
