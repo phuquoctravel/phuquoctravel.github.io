@@ -156,9 +156,9 @@ label #cancel {
   }
   .home .content h3{
    
-    top: 52%;
+    top: 48%;
     left:15%;
-    font-size: 500%;
+    font-size: 470%;
   }
   .home .content p{
   top: 62%;
@@ -169,16 +169,20 @@ label #cancel {
 .home .content a{
   font-size: 1.8rem;
   padding-top: 1rem;
-  top: 67%;
+  top: 69%;
   LEFT: 23%;
 }
 }
 @media (max-width: 1024px){
   .home .content h3{
    
-    top: 45%;
+    top: 50%;
     left:15%;
-    font-size: 450%;
+    font-size: 460%;
+  }
+  .home .content a{
+   
+    LEFT: 27%;
   }
 }
 
@@ -219,21 +223,21 @@ nav ul li a {
     color:#FFF;
   }
   .home .content h3{
-    top: 45%;
-    left:15%;
+    top: 43%;
+    left:19%;
     font-size: 300%;
    }
   
   .home .content p{
     top: 54%;
-    LEFT: 4%;
+    LEFT: 8%;
     font-size: 150%;
   }
   
   .home .content a{
     padding-top: 1.1rem;
     top: 62%;
-    left: 35%;
+    left: 37%;
   }  
 
 
