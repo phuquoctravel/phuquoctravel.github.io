@@ -173,6 +173,14 @@ label #cancel {
   LEFT: 23%;
 }
 }
+@media (max-width: 1024px){
+  .home .content h3{
+   
+    top: 45%;
+    left:15%;
+    font-size: 450%;
+  }
+}
 
 @media (max-width: 992px) {
   nav img {
@@ -203,7 +211,7 @@ nav ul li a {
 }  
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: landscape) {
 
 
   label #btn {
@@ -212,20 +220,20 @@ nav ul li a {
   }
   .home .content h3{
     top: 45%;
-    left: 27%;
-    font-size: 350%;
+    left:15%;
+    font-size: 300%;
    }
   
   .home .content p{
     top: 54%;
-    LEFT: 10%;
-    font-size: 170%;
+    LEFT: 4%;
+    font-size: 150%;
   }
   
   .home .content a{
     padding-top: 1.1rem;
     top: 62%;
-    left: 37%;
+    left: 35%;
   }  
 
 
@@ -268,7 +276,7 @@ nav ul li a {
     color: #fff;
   }
 }
-  @media (max-width: 444px){
+  @media (max-width: 444px) and (orientation: landscape){
     .home .content h3{
       top: 45%;
       left: 13%;
@@ -298,7 +306,7 @@ nav ul li a {
      
     }
    }
-   @media (max-width: 374px){
+   @media (max-width: 374px) and (orientation: landscape){
     .home .content h3{
       
       font-size: 2rem;
